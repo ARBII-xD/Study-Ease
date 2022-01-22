@@ -4,8 +4,7 @@ import { Form, Alert } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import { useUserAuth } from "../context/UserAuthContext";
 // import { createUserDocument } from "../firebase";
-
-
+import './Appp.css'
 const Signup = () => {
   // const [displayName , setDisplayName] = useState("");
   const [email, setEmail] = useState("");
@@ -31,14 +30,14 @@ const Signup = () => {
 
   return (
     <>
-      <div className="p-4 box">
-        <h2 className="mb-3">Firebase Auth Signup</h2>
+      <div className="p-4 box ">
+        <h2 className="mb-3">StudyEase Signup</h2>
         {error && <Alert variant="danger">{error}</Alert>}
         <Form onSubmit={handleSubmit}>
         {/* <Form.Group className="mb-3" controlId="formBasicDisplayName">
             <Form.Control
               type="displayName"
-              placeholder="displayName"
+              placeholder="Username"
               onChange={(e) => setDisplayName(e.target.value)}
             />
           </Form.Group> */}

@@ -24,3 +24,108 @@
   width: 40px !important;
   height: 38px !important;
 } */
+
+body {
+  background-color: #a9bfc0;
+  /* display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  align-items: center;
+  height: 100vh; */
+}
+
+
+#more{
+  display: none;
+}
+
+.aboutt{
+  width: '80vw';
+  font-size: '3rem';
+  font-weight: normal;
+  
+}
+.container{
+  display: block;
+  /* margin-top: 2em;
+  margin-bottom: 2em; */
+  width:fit-content;
+  background-color: rgb(222, 233, 233);
+  justify-content: center;
+  text-align: center;
+  font-size: larger;
+
+}
+
+.homeSections{
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  width:fit-content;
+  background-color: #a9bfc0;
+  justify-content: center;
+  text-align: center;
+  font-size: larger;
+
+}
+
+.aboutSections{
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  width:fit-content;
+  color: white;
+  background-color: #242225;
+  justify-content: center;
+  text-align: center;
+  font-size: larger;
+}
+
+
+.notesContainer{
+  display: flex;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  width:fit-content;
+  color: white;
+  background-color: #242225;
+  /* justify-content: center; */
+  /* text-align: center; */
+  font-size: larger;
+}
+
+
+
+
+.nav-height{
+  height: 90px;
+  padding:3em ;
+  color: aqua;
+  justify-content:center ;
+  text-align: center;
+}
+.nav-item{
+  
+  padding: 0.5em;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.btn {
+  border-radius: 30px;
+  width: 170px;
+  height: 50px;
+  color: white;
+  font-size: 20px;
+  background-color: rgb(121, 70, 121);
+}
+
+.btnH{
+  border-radius: 30px;
+  width: 200px;
+  height: 50px;
+  color: white;
+  font-size: 20px;
+  background-color: rgb(121, 70, 121);
+}

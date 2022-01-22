@@ -1,7 +1,8 @@
-import {initializeApp} from 'firebase/app'
-import {getAuth} from 'firebase/auth';
-
-// import firestore from 'firebase/app'
+import { initializeApp } from 'firebase-admin';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import 'firebase/compat/firestore';
+import {getFirestore} from 'firebase/firestore'
 
 
 const firebaseConfig = {
@@ -13,33 +14,19 @@ const firebaseConfig = {
     appId: "1:800421790314:web:88871debf3c721b7ae8013"
   };
   
-  // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app)
-export default app;
 
-// // const firebase = initializeApp(firebaseConfig)
-// export const firestore = firebase.firestore()
 
-// export const createUserDocument = async (user, additionalData)=>{
-//   if (!user) return;
+  const app = initializeApp(firebaseConfig)
 
-//   const userRef = firestore.doc(`users/${user.uid}`);
+const firebaseApp = firebase.initializeApp(firebaseConfig);
 
-//   const snapshot = await userRef.get();
+export const firestoreDatabase = getFirestore(app)
 
-//   if (!snapshot.exists){
-//     const {email} =user;
-//     const {displayName} = additionalData;
 
-//     try{
-//       userRef.set({
-//         displayName,
-//         email,
-//         createdAt: new Date()
-//       })
-//     } catch (error){
-//       console.log("Error in creating user ", error)
-//     }
-//   }
-// }
+  
+
+// Use these for db & auth
+const db = firebaseApp.firestore();
+const auth = firebase.auth();
+
+export { auth, db }; 

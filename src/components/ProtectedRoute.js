@@ -6,7 +6,8 @@ const ProtectedRoute = ({ children }) => {
 
   console.log("Check user in Private: ", user);
   if (!user) {
-    return <Navigate to="/" />;
+    // alert("You have to Sign-In to access this route, redirecting to Sign-In page")
+    return <Navigate to="/login" />;
   }
   return children;
 };
