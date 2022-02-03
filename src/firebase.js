@@ -1,8 +1,12 @@
-import {initializeApp} from 'firebase/app'
-import {getAuth} from 'firebase/auth';
+// import { initializeApp } from 'firebase-admin';
+// import firebase from 'firebase/compat/app';
+// import 'firebase/compat/auth';
+// import 'firebase/compat/firestore';
+// import {getFirestore} from 'firebase/firestore'
 
-// import firestore from 'firebase/app'
 
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
     apiKey: "AIzaSyAqhEgDz98_4NMKytgDoG-fWL9hwvXRiy8",
@@ -13,33 +17,23 @@ const firebaseConfig = {
     appId: "1:800421790314:web:88871debf3c721b7ae8013"
   };
   
-  // Initialize Firebase
+
+
+//   const app = initializeApp(firebaseConfig)
+
+// const firebaseApp = firebase.initializeApp(firebaseConfig);
+
+// export const firestoreDatabase = getFirestore(app)
+
+
 const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app)
+export const auth = getAuth(app);
 export default app;
 
-// // const firebase = initializeApp(firebaseConfig)
-// export const firestore = firebase.firestore()
+  
 
-// export const createUserDocument = async (user, additionalData)=>{
-//   if (!user) return;
+// // Use these for db & auth
+// const db = firebaseApp.firestore();
+// const auth = firebase.auth();
 
-//   const userRef = firestore.doc(`users/${user.uid}`);
-
-//   const snapshot = await userRef.get();
-
-//   if (!snapshot.exists){
-//     const {email} =user;
-//     const {displayName} = additionalData;
-
-//     try{
-//       userRef.set({
-//         displayName,
-//         email,
-//         createdAt: new Date()
-//       })
-//     } catch (error){
-//       console.log("Error in creating user ", error)
-//     }
-//   }
-// }
+// export { auth, db }; 

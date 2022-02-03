@@ -1,14 +1,24 @@
-import React from "react";
+import React, {useContext} from "react";
 import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router";
 import { useUserAuth } from "../context/UserAuthContext";
+import { UserContext } from "../App";
+
+
+
+
 
 const Quiz = () => {
+  const {state , dispatch} = useContext(UserContext)
+
     const { logOut, user } = useUserAuth();
     const navigate = useNavigate();
     const handleLogout = async () => {
       try {
         await logOut();
+        
+        dispatch({type:"USER" , payload:false})
+
         navigate("/");
       } catch (error) {
         console.log(error.message);
