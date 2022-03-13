@@ -1,4 +1,7 @@
-## Some Snapshots of UI
+# Study-Ease
+## ABOUT THIS WEBSITE
+This website is designed to assist the students in their academics by predicting their future career goals based on their performance which is tested via multiple quiz assessments. Also, the students can download notes on different subjects. 
+## SOME SNAPSHOPTS OF UI
 ![signup](https://user-images.githubusercontent.com/70211234/158060272-1c18f800-dd01-464e-ac83-3f25c5e7ea90.png)
 ![login](https://user-images.githubusercontent.com/70211234/158060349-55d30d8d-61c0-47c8-a4d6-4761fd2b239f.png)
 ![home route  test](https://user-images.githubusercontent.com/70211234/158060364-1b053de5-156b-475d-af21-1a63c5faf9c0.png)
